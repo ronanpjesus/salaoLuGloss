@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,300;0,700;1,100&display=swap');
+*{margin: 0; padding: 0}
+
+body{
+	background: #363636;
+}
+
+header, img {
+	width: 100%;
+	height: 380px;
+} 
+
+nav{ /*tag nav é a caixa do menu*/
+	background-color: #000000;
+	padding: 20px;
+	text-align: center;
+}
+/*inicio do menu*/
+.menu{
+	margin-right: 60px;
+	font-weight: bold;
+}
+
+.menu:link, .menu:visited{
+	color: #fff;
+
+}
+.menu:hover, .menu:active{
+	color: #F0E68C;
+}
+/*fim do menu*/
+
+a{
+	font: 1.1rem 'Poppins', sans-serif;
+	text-decoration:none; 
+}
+
+main{
+	padding: 60px;
+}
+
+/*inicio fachada*/
+#fachada{
+	display: flex; /*flex box perminete o alinhamneto em linha*/
+	margin-top: 20px;/*coloca um espaçamento em cima*/
+	margin-bottom: 20px;/*coloca um espaçamento em baixo*/
+}
+
+#img-fachada{ /*identificador unico usa #*/
+	width: 500px;
+	height: 500px;
+}
+
+#img-fachada{
+	box-shadow: 0 4px 8px #836FFF; /*coloca a sombra*/
+	transition: 0.5s;
+
+}
+
+#img-fachada:hover{
+	box-shadow: 10px 10px 10px #ffff; /*coloca a sombra*/
+	align-items: center;
+}
+
+#fachada p{
+	text-align: center;
+	padding: 20px;	
+
+}
+/*Fim fachada*/
+
+
+h1{
+	color: #fff;
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3.5rem;
+	margin-bottom: 22px/*coloca um espaçamento em baixo*/
+}
+
+section {
+	padding: 60px;
+}
+
+h2{
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+p{
+	color: #fff;
+	text-align: justify;
+	font: 1.5rem 'Poppins', sans-serif;
+	font-weight: 100;
+	/*text-indent: 50px;	/*coloca um recuo no inicio das (tag P)*/
+}
+
+/*inicio de beneficios*/
+
+#pag-beneficios {
+	background-color: #000;
+	padding: 60px;
+}
+
+#pag-beneficios h2{
+	margin-bottom: 20px;
+} 
+
+/*inicio da lista beneficios*/
+
+ul{
+	color: #fff;
+	list-style-position: inside;
+	list-style-type: circle;
+	margin: 30px 0 0 60px; /*espaçamento na lista*/
+}
+
+li{
+	font: 1.5rem 'Poppins',sans-serif;
+	line-height: 3rem;
+}
+
+/*Fim de beneficios e da lista beneficios*/
+
+/*inicio de equipe*/
+
+#pag-equipe {
+	background-color:#777777;
+	text-align: center;
+	margin-bottom: 22px; 
+}
+
+/*inicio card*/
+#container{
+	display: flex; /*flex box perminete o alinhamneto em linha*/
+	margin-top: 20px;/*coloca um espaçamento em cima*/
+	margin-bottom: 20px;/*coloca um espaçamento em baixo*/
+}
+
+.card{
+	background-color: #363636;
+	margin: 10px;
+	width: 25%; /*uma lasgura especifica para o card*/
+	border-radius: 8px; /*arredonda o card*/
+	box-shadow: 0 4px 8px #836FFF; /*coloca a sombra*/
+	transition: 0.5s;
+}
+
+.card:hover{
+	box-shadow: 0 8px 16px #ffff; /*coloca a sombra*/
+}
+
+.card-conteudo{
+	padding: 10px;
+}	
+
+.card-conteudo p{ /*altera os P dos cards*/
+	color: #fff;
+	font: 1rem 'Poppins', sans-serif;
+	line-height: 20px;
+}
+
+h3{
+	font: 2rem 'Kaushan Script', cursive;
+	color: #F0E68C;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/*fim card*/
+/*Fim da equipe*/
+
+/*line-height: 1.5rem;/*altura da linha*/
+
+/*começa objetivo*/
+#pag-objetivo{
+}
+
+#pag-objetivo p{
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+
+#container-objetivo{
+	display: flex;
+}
+
+.coluna-objetivo{
+	padding:40px;
+}
+
+.coluna-objetivo h2{
+	font: 4rem;
+	text-align: center; 
+}
+
+.container-imagens{
+	margin-top: 40px;
+	display: flex;/*trabalha com alinhamento*/
+	justify-content: center;
+	align-items: center;
+}
+
+.container-imagens p{
+	color: #fff;
+}
+
+.img-icones{
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+
+video{
+	width: 300px;
+}
+/*fim objetivos*/
+
+/*inicio do footer*/
+footer{
+	background-color: #000;
+	padding: 20px;
+}
+
+footer p {
+	text-align: center;
+	font: 20px;
+}
+
+footer a{
+	color: #fff;
+
+}
+
+footer a:hover{
+	color: #FFD700;
+}
+
+#footer-ronan{
+	font-size: 25px;
+}
+
+/*Fim do footer*/
+/*inicia agendamentos*/
+
+#pag-agendamentos{
+}
+
+#pag-agendamentos p{
+	text-align: center; /*alinha ao centro*/
+	margin-bottom: 20px;/*coloca um espaçamento 
+	em baixo*/
+}
+
+form{
+	width: 400px; /*define o tamanho do 
+	formulario*/
+	margin: 0 auto; /*define a margem 
+	do formulario e alinha ao centro*/
+}
+
+input, select, textarea{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #C4C4C4;
+	color: #777;
+}
+
+label, fieldset, input, select, textarea{
+	font: 1rem 'Roboto', sans-serif;
+}
+
+fieldset{
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#data-hora-quant{
+	display: flex;
+}
+
+input[type="radio"], input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+	margin-left: 50px;
+}
+
+textarea{
+	height: 80px;
+}
+
+#botoes-formulario{
+	display: flex;
+}
+
+input[type="submit"], input[type ="reset"]{
+	margin: 20px;
+	background-color: #8BC34A;
+	color: #fff;
+	border:0;
+	border-radius: 5px;
+}
+
+input[type="reset"]{
+	background-color: #F47E7E;
+}
+
+
+
+/*Fim agendamentos*/

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "pt-br"> <!--define a linguagem em portugues--> 
+<head><!--inicio do head "Cabeça"-->
+	<title>
+		Salao Lu Gloss
+	</title> <!--difinie o nome da guia do navegador-->
+	<meta charset="utf-8"/> <!--define os caracteres especiais da lingua portuguesa-->
+	<meta name="author" content="Ronan P. J."><!--define quem é o autor-->
+	<meta name = "keywords" content="Vicente Pires, Salão, Manicure"><!--palavras chaves de busca-->
+	<meta name= "description" content="Bem Estar, Qualidade de vida, Progressivas, escova, penteados, manicure, pé de cure">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<header>
+		<img src = "Imagens/banner.jpeg" alt = "Logo do Salão Lu Gloss"/>
+	</header> 
+
+	<nav>
+		<!--Começa o Menu-->
+		<a class = "menu" href ="index.html">Home</a>  
+		<!--Termina o Menu-->
+	</nav>
+		
+<h1>Agendamentos</h1>
+	<section id = "pag-agendamentos">
+		
+		<p>Reserve o seu <b>Horário</b></p>
+		
+		<!--Começa o inicio do Formulario-->
+				
+				<form name = "" method="" action="">
+					<label for="nome">Nome: </label> <br/>
+					<input id = "nome" type="text" name="nome_completo" size = "80" placeholder="Digite seu nome completo."required/>
+					<br/><br/>
+				
+					<label for="email">E-mail: </label> <br/>
+					<input id = "email" type="email" name="email" size = "80" placeholder="nomeusuario@email.com"required/>
+					<br/><br/>	
+
+					<label for="celular">Celular: </label> <br/>
+					<input id = "celular" type="tel" name="celular" size = "80" placeholder="(00)00000-0000" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" required/><br/><br/>
+
+					<label for="senha">Senha: </label> <br/>
+					<input id = "senha" type="password" name="senha" size = "80" placeholder="Digite somente números."required/>
+					<br/><br/>
+
+					<!--Começa a divisão da hora para ficar lado a lado-->
+					<div id="data-hora-quant">
+						<div>
+							<label for="data">Data: </label>
+							<input id ="data" type="date" name="data">
+						</div>
+
+						<div>
+							<label for = "hora">Hora:</label>
+							<input id ="hora" type="time" name="hora">
+						</div>
+
+						<div>
+							<label for = "quantidade" >Quantidade de horários:</label> 
+							<input id = "quantidade" type="number" name="quantidade" min="1" max="10" step="1">
+						</div> 
+					</div>
+					<!--Fim da divisão da hora para ficar lado a lado-->
+
+					<label for ="tipo">Qual profissional?</label><br/>
+						<select id="tipo" name ="tipo">
+							<option value ="" >Selecione</option>
+							<option value ="cabelereira"> Cabelereira </option>
+							<option value = "manicure" > Manicure </option>
+							<option value ="depilacao"> Depilação </option>
+						</select><br/><br/>
+
+					<fieldset>
+						<legend>Gênero</legend>
+						<input id ="masc" type="radio" name="genero" value = "masc"/> <label for = "masc">Masculino</label>
+						<input id ="fem" type="radio" name="genero" value="fem"/> <label for = "fem">Feminino</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Servico</legend>
+						<input id = "corte"type="checkbox" name="servico" value ="corte"/><label for="corte">Corte</label><br/>
+						<input id = "penteado"type="checkbox" name="servico" value ="penteado"/><label for="penteado">Penteados</label><br/>
+						<input id = "manicure"type="checkbox" name="servico" value ="manicure"/><label for="corte">Manicure</label><br/>
+						<input id = "depilacao"type="checkbox" name="servico" value ="depilacao"/><label for="depilacao">Depilação</label><br/>
+					</fieldset><br/>
+
+					<label for ="msg">Sugestões</label><br/>
+					<textarea id="msg"></textarea>
+
+					<div id = "botoes-formulario">
+						<input type="submit" name="bnt-agendar" value="AGENDAR"/>
+						<input type="reset" name="btn-cancelar" value ="CANCELAR"/>
+					</div>
+				</form>
+	</section>
+<!--fim do formulario-->
+
+<footer>
+	<p> Desenvolvido Por: <a id = "footer-ronan" href ="http://instagram.com/ronan_pj" target = "_blank">Ronan Pereira de Jesus</a> - 2022</p>
+</footer>
+
+</body>
+</html>
+
+<!--Tag <u></u> deixa sublinhado-->
+<!--Tag <strong></strong> deixa a palavra negritada, mais forte-->
+<!--Tag <i></i> deixa o texto Italico-->
+
+
